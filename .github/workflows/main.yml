@@ -1,0 +1,16 @@
+name: demo-action
+on:
+  push:
+    branches: test
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout-steps
+        uses: actions/checkout@v4.2.2
+      - name: printmessgae
+        run: echo "Hello team"
+          
+  
