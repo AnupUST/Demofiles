@@ -12,5 +12,11 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: printmessgae
         run: echo "Hello team"
+      - name : CreatDockerImage
+        run :
+            sudo docker build -t nginximg  .
+            sudo docker run nginx -d -p 3000:3000 nginximg
+
+      
           
   

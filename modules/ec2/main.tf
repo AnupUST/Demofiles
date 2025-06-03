@@ -1,7 +1,8 @@
 resource "aws_instance" "demo" {
     ami= data.aws_ami.latestimage.id
     instance_type = var.instance.type
-    key_name = "my-key"
+    key_name = "key"
+
     
 }
 
