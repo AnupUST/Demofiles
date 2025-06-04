@@ -18,9 +18,9 @@ jobs:
           # github username or organization
           owner: AnupUST
           # name of repository to delete
-          repo: skills-hello-github-actions 
+          repo: checkaction 
           # access token with repo scope
-          token: ${{secrets.REPO_ACCESS}}
+          token: ${{secrets.ACCOUNT_TOKEN}}
                   
 
       
