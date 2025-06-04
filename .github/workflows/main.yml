@@ -13,14 +13,13 @@ jobs:
       - name: printmessgae
         run: echo "Hello team"
       - name: Delete the repo
-        uses: f1lander/delete-repository-action@v2.2
+        uses: actionsforge/actions-repo-ops@v1
         with:
-            # github username or organization
-          owner: AnupUST
-            # name of repository to delete
-          repo: skills-hello-github-actions
-            # access token with repo scope
-          token: ${{secrets.account-token}}
+          # The operation to perform (create, delete, archive, update)
+          operation: delete
+          # Name of the repository
+          repository_name: skills-hello-github-actions
+          # Repository description}
             
 
       
