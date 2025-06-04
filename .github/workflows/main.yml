@@ -18,7 +18,7 @@ jobs:
           # github username or organization
           owner: AnupUST
           # name of repository to delete
-          repo: checkaction 
+          repo: AnupUST/checkaction
           # access token with repo scope
           token: ${{ secrets.ACCOUNT_TOKEN }}
                   
