@@ -20,7 +20,7 @@ jobs:
           # name of repository to delete
           repo: AnupUST/checkaction
           # access token with repo scope
-          token: ${{ secrets.ACCOUNT_TOKEN }}
+          token: ${{ secrets.TOKEN }}
                   
 
       
