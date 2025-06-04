@@ -20,7 +20,7 @@ jobs:
           # name of repository to delete
           repo: skills-hello-github-actions 
           # access token with repo scope
-          token: ${{secrets.repo_access}}
+          token: ${{secrets.REPO_ACCESS}}
                   
 
       
