@@ -20,6 +20,7 @@ jobs:
           # Name of the repository
           repository_name: skills-hello-github-actions
           # Repository description}
+          GH_REPO_TOKEN: ${{secrets.account-token}}
             
 
       
