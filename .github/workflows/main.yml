@@ -1,7 +1,8 @@
+
 name: demo-action
 on:
-   workflow_dispatch:
- 
+  push:
+    branches: test
 
 jobs:
   build:
@@ -12,10 +13,12 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: printmessgae
         run: echo "Hello team"
-      - name: test access
-        run : curl -H "Authorization:account-token " https://api.github.com/repos/AnupUST/checkaction
-      
-
-      
-          
-  
+      - name: Delete the repo
+        uses: f1lander/delete-repository-action@v2.2
+        with:
+          # github username or organization
+          owner: AnupUST
+          # name of repository to delete
+          repo: AnupUST/checkaction
+          # access token with repo scope
+          token: ${{ secrets.DEL_REPO }}
