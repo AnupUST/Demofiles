@@ -14,11 +14,11 @@ jobs:
       - name: printmessgae
         run: echo "Hello team"
       - name: Delete the repo
-        uses: f1lander/delete-repository-action@v2.2
+        uses: github/delete-repository-action@v1
         with:
           # github username or organization
-          owner: 'AnupUST'
+          owner: AnupUST
           # name of repository to delete
-          repo: 'checkaction'
+          repo: checkaction
           # access token with repo scope
-          token: '${{ secrets.DEL_REPO }}'
+          token: ${{ secrets.DEL_REPO }}
