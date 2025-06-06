@@ -17,8 +17,8 @@ jobs:
         uses: f1lander/delete-repository-action@v2.2
         with:
           # github username or organization
-          owner: AnupUST
+          owner: 'AnupUST'
           # name of repository to delete
-          repo: checkaction
+          repo: 'checkaction'
           # access token with repo scope
-          token: ${{ secrets.DEL_REPO }}
+          token: '${{ secrets.DEL_REPO }}'
