@@ -12,16 +12,9 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: printmessgae
         run: echo "Hello team"
-      - name: Delete the repo
-        uses: f1lander/delete-repository-action@v2.2
-        with:
-          # github username or organization
-          owner: AnupUST
-          # name of repository to delete
-          repo: AnupUST/checkaction
-          # access token with repo scope
-          token: ${{ secrets.TOKEN }}
-                  
+      - name: test access
+        run : curl -H "Authorization:account-token " https://api.github.com/repos/AnupUST/checkaction
+      
 
       
           
